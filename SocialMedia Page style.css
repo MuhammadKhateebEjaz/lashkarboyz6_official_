@@ -1,0 +1,30 @@
+/* Desktop View */
+@media (min-width: 768px) {
+    header, footer {
+      text-align: left;
+      padding: 1rem 2rem;
+    }
+  
+    nav ul {
+      justify-content: flex-start;
+    }
+  
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+      
+
+
+

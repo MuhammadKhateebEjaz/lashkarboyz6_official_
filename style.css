@@ -1,0 +1,65 @@
+
+
+    /* Table Style */
+    table {
+        width: 100%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: white;
+        border: 9px solid blue;
+    }
+
+    th {
+        padding: 10px;
+        text-align: center;
+        border: 8px solid white;
+    }
+
+    th a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    th a:hover {
+        color: #00ffcc; /* Hover effect */
+    }
+
+ 
+
+
+
+
+
+
+
+/* Desktop View */
+@media (min-width: 768px) {
+    header, footer {
+      text-align: left;
+      padding: 1rem 2rem;
+    }
+  
+    nav ul {
+      justify-content: flex-start;
+    }
+  
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+
+
+

@@ -138,7 +138,7 @@ header {
     }
 
     .navigation {
-        justify-content: flex-start;
+        justify-content: flex-center;
     }
 
     .button {

@@ -103,28 +103,89 @@ footer p {
 
 /* Responsive Design */
 
-/* Desktop View */
-@media (min-width: 768px) {
-    header, footer {
-        text-align: left;
-        padding: 1rem 2rem;
+/* Default styles for desktop (larger screens) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px; /* Limit content width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Desktop-specific styling */
+@media (min-width: 1025px) {
+    .container {
+        padding: 40px;
     }
 
-    nav ul {
+    .navigation {
         justify-content: flex-start;
     }
 
-    main {
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: left;
+    .button {
+        padding: 16px 32px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
     }
 }
 
-/* Tablet and Mobile View */
-@media (max-width: 767px) {
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+/* Mobile-specific styling (320px to 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    header {
+        font-size: 24px; /* Smaller header font for mobile */
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 10px 0; /* Add space between navigation items */
+    }
+
+    .button {
+        width: 100%; /* Full-width buttons on mobile */
+        padding: 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
     }
 }
+

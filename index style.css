@@ -167,7 +167,7 @@ header {
     }
 
     .navigation {
-        display: flex;
+        display: center;
         flex-direction: column; /* Stack navigation items vertically */
         align-items: center;
     }

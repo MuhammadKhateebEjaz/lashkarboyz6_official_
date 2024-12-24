@@ -1,0 +1,76 @@
+/* Desktop View (Large Screens) */
+@media (min-width: 768px) {
+    header, footer {
+      text-align: left;
+      padding: 1rem 2rem;
+    }
+  
+    nav ul {
+      justify-content: flex-start;
+    }
+  
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+  
+  /* Tablet View (Medium Screens) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    nav ul {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+  
+  /* Mobile View (Small Screens) */
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+
+
+
+
+
+        body {
+            background-image: url(ALL_Image/SOCIAL\ ICON\ 4.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: white;
+            border: 5px solid blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: darkblue;
+        }
+    
+
+
+
+
+        

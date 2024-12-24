@@ -1,193 +1,76 @@
-/* Global Body Styling */
-body {
-    background-image: url("ALL_Image/merakist-CNbRsQj8mHQ-unsplash (1).jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%; /* Corrected from width="100%" */
-    height: 100%; /* Corrected from height="20%" */
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Header Styles */
-h1, h2, h3 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-p {
-    text-align: center;
-    font-size: 1rem;
-    color: #e0cb0e;
-    margin-bottom: 20px;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    background-color: #fff;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-th {
-    width: 255px;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-th a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-th a:hover {
-    color: #d8e0df;
-}
-
-/* Hover effect for table rows */
-table tr:hover {
-    background-color: #0e31a1;
-    cursor: pointer;
-}
-
-/* Footer Styling */
-footer {
-    background-color: rgba(42, 49, 153, 0.87);
-    color: rgb(208, 202, 228);
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 1rem;
-    box-shadow: 0 0 10px rgba(185, 157, 157, 0.1);
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Smooth transition for buttons */
-.btn-hire, .btn-contact {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-hire:hover, .btn-contact:hover {
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
-}
-
-/* Default styles for desktop (larger screens) */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 1200px; /* Limit content width for larger screens */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    font-size: 32px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-
-/* Desktop-specific styling */
-@media (min-width: 1025px) {
-    .container {
-        padding: 40px;
+/* Desktop View (Large Screens) */
+@media (min-width: 768px) {
+    header, footer {
+      text-align: left;
+      padding: 1rem 2rem;
     }
-
-    .navigation {
-        justify-content: flex-center;
+  
+    nav ul {
+      justify-content: flex-start;
     }
-
-    .button {
-        padding: 16px 32px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 5px;
+  
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
     }
-}
-
-/* For screens between 320px and 480px */
-@media (min-width: 320px) and (max-width: 480px) {
-    body {
-        font-size: 14px; /* Adjust font size for readability */
-        padding: 10px; /* Add padding for a comfortable layout */
+  }
+  
+  /* Tablet View (Medium Screens) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    nav ul {
+      flex-direction: row;
+      gap: 1rem;
     }
-
-    header {
-        font-size: 18px; /* Header font size */
+  }
+  
+  /* Mobile View (Small Screens) */
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
     }
+  }
+  
 
-    .container {
-        width: 100%; /* Full width on smaller screens */
-        padding: 10px;
-    }
 
-    .navigation {
-        display: center;
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center;
-    }
 
-    .navigation a {
-        margin: 10px 0; /* Add space between navigation items */
-        text-decoration: none;
-    }
 
-    .image {
-        width: 100%; /* Make images responsive */
-        height: auto;
-    }
 
-    .button {
-        width: 100%; /* Buttons should take up full width */
-        padding: 12px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        text-align: center;
-    }
-}
+        body {
+            background-image: url(ALL_Image/SOCIAL\ ICON\ 4.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: white;
+            border: 5px solid blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: darkblue;
+        }
+    
+
+
+
+
+        

@@ -66,11 +66,11 @@
 .navbar .logo-text span {
     font-size: 10px;
     font-weight: normal;
-    display: NONE;
+    display:Block ;
 }
 .navbar .nav-links {
     list-style: none;
-    display: flex;
+    display: none;
     margin: 0;
     padding: 0;
  }
